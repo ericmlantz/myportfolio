@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html, body {
   background: url(https://512pixels.net/downloads/macos-wallpapers/10-6-Server.jpg);
@@ -10,46 +12,44 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   text-align: center;
   align-items: center;
+  height: 100vh;
 }
 .App {
   display: grid;
-  grid-template-columns: 10;
-  grid-template-rows: 10 70 20;
-  grid-template-areas: 
-  'menubar'
-  'main'
-  'dock';
   justify-items: center;
+  max-width: fit-content;
 }
 /* Default Page Layout */
 .menubar {
   grid: menubar;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: rgba(207, 207, 207, 0.2);
   backdrop-filter: blur(5px);
  
   height: 4vh;
-  width: 100%;
+  width: 100vw;
   padding: 5px;
 }
 .main {
   grid: main;
   height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dock {
   grid: dock;
   height: 15vh;
-  width: 90%;
+  width: fit-content;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
 
-  background-color: rgba(190, 190, 190, 0.5 );
+  background-color: rgba(190, 190, 190, 0.3 );
   border-radius: 1rem;
-  border: 1px rgba(245, 245, 245, 0.524) ridge
+  border: 1px rgba(245, 245, 245, 0.524) ridge;
+  backdrop-filter: blur(3px);
 }
 
 /* MENU BAR */
@@ -62,6 +62,7 @@ html, body {
 .menuitems {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .menuwidgets {
   display: flex;
@@ -72,4 +73,16 @@ html, body {
 /* Dock */
 .dockcontainer {
   display: flex;
+  justify-content: center;
+  margin: 8px auto;
+  padding: 0px 20px
+}
+
+/* Home Main */
+.aboutmewindow {
+  width: 70%;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

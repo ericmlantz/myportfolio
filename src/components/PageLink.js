@@ -2,22 +2,20 @@
 //imported from this repo
 
 //create the component
-const PageLink = ({ width, src, onPress, ...otherProps }) => {
+const PageLink = ({ src, page, onPress, ...otherProps }) => {
   //render
   return (
-    <section>
-      <div onPress={onPress}>
-        <img
-          style={{
-            width: `${width}`,
-            marginLeft: '1rem',
-            ...otherProps
-          }}
-          src={src}
-          alt={`link to ${src}`}
-        />
-      </div>
-    </section>
+    <a href={page}>
+      <img
+        style={{
+          margin: '1px 5px',
+          aspectRatio: 1 / 1,
+          ...otherProps
+        }}
+        src={src}
+        alt={`link to ${src}`}
+      />
+    </a>
   )
 }
 //make this component available to the app

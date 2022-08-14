@@ -14,6 +14,7 @@ const MenuBar = ({ title }) => {
           className="siteicon"
           src={require('../assets/Eric Memoji.png')}
           width={'20px'}
+          height={'20px'}
           url={'https://www.google.com'}
           marginLeft=".5rem"
         />

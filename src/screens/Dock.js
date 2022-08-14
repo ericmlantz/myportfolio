@@ -6,26 +6,22 @@ import PageLink from '../components/PageLink'
 const Dock = () => {
   //render
   return (
-    <div className="dockcontainer">
+    <section className="dockcontainer">
       <PageLink
-        className="homeicon"
         src={require('../assets/Eric Memoji.png')}
-        width={'80px'}
         url="https://www.google.com"
+        page="/"
       />
       <PageLink
-        className="projecticon"
         src={require('../assets/projectIcon.png')}
-        width={'80px'}
         url="https://www.google.com"
       />
       <PageLink
-        className="resumeicon"
         src={require('../assets/resumeicon.png')}
-        width={'80px'}
         url="https://www.google.com"
+        page="/resume"
       />
-    </div>
+    </section>
   )
 }
 //make this component available to the app

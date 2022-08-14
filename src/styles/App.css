@@ -2,34 +2,31 @@
   box-sizing: border-box;
 }
 html, body {
-  margin: 0;
-  padding: 0;
   background: url(https://512pixels.net/downloads/macos-wallpapers/10-6-Server.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  align-items: center;
 }
-/* Default Page Layout */
 .App {
   display: grid;
-  grid-template-columns: "100%";
-  grid-template-rows: "10 70% 25%";
+  grid-template-columns: 10;
+  grid-template-rows: 10 70 20;
   grid-template-areas: 
   'menubar'
   'main'
   'dock';
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  justify-items: center;
 }
+/* Default Page Layout */
 .menubar {
   grid: menubar;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
   background-color: rgba(207, 207, 207, 0.2);
   backdrop-filter: blur(5px);
  
@@ -42,9 +39,17 @@ html, body {
   height: 80vh;
 }
 .dock {
-  height: 15vh;
-  background-color: brown;
   grid: dock;
+  height: 15vh;
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(190, 190, 190, 0.5 );
+  border-radius: 1rem;
+  border: 1px rgba(245, 245, 245, 0.524) ridge
 }
 
 /* MENU BAR */

@@ -13,7 +13,7 @@ const MenuBar = ({ title }) => {
         <PageLink
           className="siteicon"
           src={require('../assets/Eric Memoji.png')}
-          width={'25px'}
+          width={'20px'}
           url={'https://www.google.com'}
           marginLeft=".5rem"
         />
@@ -23,13 +23,13 @@ const MenuBar = ({ title }) => {
         <IconLink
           name="github"
           url="https://github.com/ericmlantz"
-          size="1.5rem"
+          size="1rem"
           margin="8px"
         />
         <IconLink
           name="linkedin"
           url="https://www.linkedin.com/in/eric-lantz/"
-          size="1.5rem"
+          size="1rem"
           margin="8px"
         />
       </section>

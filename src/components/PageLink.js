@@ -1,19 +1,20 @@
 //imported from 3rd party libraries
-
+import { useNavigate } from 'react-router-dom'
 //imported from this repo
 
 //create the component
-const PageLink = ({ width, src, url, ...otherProps }) => {
+const PageLink = ({ width, src, onPress, ...otherProps }) => {
+  const navigate = useNavigate()
   //render
   return (
     <section>
-      <a href={url} alt={`${url}`}>
+      <div onPress={onPress}>
         <img
           style={{ width: `${width}`, ...otherProps }}
           src={src}
           alt={`link to ${src}`}
         />
-      </a>
+      </div>
     </section>
   )
 }

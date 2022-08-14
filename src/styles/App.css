@@ -68,3 +68,8 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+/* Dock */
+.dockcontainer {
+  display: flex;
+}

@@ -1,6 +1,7 @@
 //imported from 3rd party libraries
 
 //imported from this repo
+import Dock from './Dock'
 import MenuBar from './MenuBar'
 
 //create the component
@@ -10,7 +11,9 @@ const Home = () => {
     <>
       <MenuBar title="Home" />
       <div className="main">Main Area</div>
-      <div className="dock">Dock</div>
+      <div className="dock">
+        <Dock />
+      </div>
     </>
   )
 }

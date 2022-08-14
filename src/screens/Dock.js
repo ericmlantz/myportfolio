@@ -10,7 +10,19 @@ const Dock = () => {
       <PageLink
         className="homeicon"
         src={require('../assets/Eric Memoji.png')}
-        width={'50px'}
+        width={'80px'}
+        url="https://www.google.com"
+      />
+      <PageLink
+        className="projecticon"
+        src={require('../assets/projectIcon.png')}
+        width={'80px'}
+        url="https://www.google.com"
+      />
+      <PageLink
+        className="resumeicon"
+        src={require('../assets/resumeicon.png')}
+        width={'80px'}
         url="https://www.google.com"
       />
     </div>

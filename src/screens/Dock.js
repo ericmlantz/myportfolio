@@ -2,6 +2,7 @@
 
 //imported from this repo
 import PageLink from '../components/PageLink'
+
 //create the component
 const Dock = () => {
   //render
@@ -15,6 +16,7 @@ const Dock = () => {
       <PageLink
         src={require('../assets/projectIcon.png')}
         url="https://www.google.com"
+        page="/projects"
       />
       <PageLink
         src={require('../assets/resumeicon.png')}

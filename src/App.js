@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import './styles/App.css'
 import Home from './screens/Home'
 import Resume from './screens/Resume'
-
+import Projects from './screens/Projects'
 //create the component
 export default function App() {
   return (

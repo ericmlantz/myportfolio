@@ -23,11 +23,10 @@ const OverviewTab = () => {
           <div style={{ fontSize: '2rem', fontWeight: '500' }}>
             Eric <span style={{ fontWeight: '200' }}>Lantz</span>
           </div>
-          <div style={{ lineHeight: 0.8, fontSize: '80%' }}>
+          <div style={{ lineHeight: 0.8, fontSize: '80%', marginBottom: '7%' }}>
             Software Engineer
           </div>
-          <br />
-          <div style={{ fontSize: '75%' }}>
+          <div style={{ fontSize: '75%', fontWeight: '300' }}>
             I'm a software engineer with a passion for automation and
             innovation. I love front-end development and get excited building a
             creative, engaging UI. I have a degree in psychology, so you get the

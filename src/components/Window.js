@@ -1,20 +1,25 @@
 //imported from 3rd party libraries
 
 //imported from this repo
+import IconLink from './IconLink'
 import Tab from './Tab'
 
 //create the component
 const Window = ({
   kind,
+  extras,
   children,
   tabname1,
   tabname2,
   tabname3,
-  windowtitle
+  windowtitle,
+  iconname,
+  color,
+  ...otherProps
 }) => {
   //render
   return (
-    <div className="window">
+    <div className="window" style={{ ...otherProps }}>
       <section className="windowmenubar">
         <section className="menuwidgets">
           <div className="windowdots red" style={{ marginLeft: '10px' }}></div>
@@ -33,6 +38,9 @@ const Window = ({
             <section className="windowbartitle">{windowtitle}</section>
           )}
         </>
+        <section className="extrawindowbaroptions">
+          {extras === 'icon' && <IconLink name={iconname} color={color} />}
+        </section>
       </section>
       <>{children}</>
     </div>

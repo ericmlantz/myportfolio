@@ -9,7 +9,7 @@ const Dock = () => {
   return (
     <section className="dockcontainer">
       <PageLink
-        src={require('../assets/Eric Memoji.png')}
+        src={require('../assets/ericIcon.png')}
         url="https://www.google.com"
         page="/"
       />
@@ -19,7 +19,7 @@ const Dock = () => {
         page="/projects"
       />
       <PageLink
-        src={require('../assets/resumeicon.png')}
+        src={require('../assets/resumeIcon.png')}
         url="https://www.google.com"
         page="/resume"
       />

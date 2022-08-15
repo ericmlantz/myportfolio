@@ -5,7 +5,6 @@
 const ImageIcon = ({ src, ...otherProps }) => {
   //render
   return (
-    // <a href={page}>
     <img
       style={{
         margin: 'auto',

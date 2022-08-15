@@ -67,7 +67,7 @@ html, body {
 /* Used for menubar and Window menu bar */
 .menuwidgets {  
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -90,7 +90,7 @@ html, body {
 }
 .windowmenubar {
   display: grid;
-  grid-template-columns: 0.15fr 1fr;
+  grid-template-columns: 0.15fr .7fr 0.15fr;
   grid-template-rows: 1fr;
   background-color: #EDEEEF;
   width: 100%;
@@ -143,9 +143,8 @@ html, body {
  .windowbartitle {
   color: #525252;
   font-weight: bold;
-  position:relative;
+  text-align: center;
   margin: auto auto;
-  width: 100%;
  }
 
  .overviewwindow {
@@ -190,7 +189,7 @@ html, body {
  }
  .overviewbutton {
   width: fit-content;
-  height: 19px;
+  height: 20px;
 
   margin-right: 10px;
   margin-left: 0px;
@@ -205,7 +204,34 @@ html, body {
   font-weight: 400;
  }
 
+ .extrawindowbaroptions {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 18px;
+  font-size: 150%;
+ }
+
+/* Projects Page */
+.projects-setup{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  margin: auto auto;
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+.blur {
+  width: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
  @media (min-width: 550px) {
  }
 
- 

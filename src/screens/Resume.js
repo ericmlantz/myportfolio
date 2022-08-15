@@ -12,11 +12,21 @@ const Resume = () => {
       <MenuBar title="Resume" />
       <div className="main">
         <Window
-          kind="tab"
-          tabname1={'Overview'}
-          tabname2={'Contact'}
-          tabname3={'Alissa!!!!'}
-        />
+          width="85%"
+          height="95%"
+          kind="title"
+          windowtitle="Resume"
+          extras="icon"
+          iconname="download"
+          color="black"
+        >
+          <iframe
+            className="resumeiframe"
+            src="https://drive.google.com/file/d/1CVgqgu_lipfGMN7MLKaiIu800yRiO5G5/preview"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </Window>
       </div>
       <div className="dock">
         <Dock />

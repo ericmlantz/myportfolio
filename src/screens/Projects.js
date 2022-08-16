@@ -44,8 +44,8 @@ const Projects = () => {
           />
         </div>
         {[...Array(9)].map((app, index) => (
-          <div className="projectapp">
-            <PageLink key={index} src={emptyApps} width={appWidth} />
+          <div className="projectapp" key={index}>
+            <PageLink src={emptyApps} width={appWidth} />
           </div>
         ))}
       </div>

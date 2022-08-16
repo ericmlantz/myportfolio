@@ -1,14 +1,14 @@
 //imported from 3rd party libraries
 
 //imported from this repo
-import ImageIcon from '../components/ImageIcon'
+import PageLink from '../components/PageLink'
 //create the component
 const OverviewTab = () => {
   //render
   return (
     <section className="overviewwindow">
       <section className="section1">
-        <ImageIcon
+        <PageLink
           src={require('../assets/AboutMe.png')}
           width="60%"
           borderRadius="50%"

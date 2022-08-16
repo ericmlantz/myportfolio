@@ -15,7 +15,8 @@ const MenuBar = ({ title }) => {
           src={require('../assets/Eric Memoji.png')}
           width={'20px'}
           height={'20px'}
-          page={'/'}
+          linktype="internal"
+          page="/"
           marginLeft=".5rem"
         />
         <div className="filemenu">{title}</div>

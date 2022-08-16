@@ -10,17 +10,17 @@ const Dock = () => {
     <section className="dockcontainer">
       <PageLink
         src={require('../assets/ericIcon.png')}
-        url="https://www.google.com"
+        linktype="internal"
         page="/"
       />
       <PageLink
         src={require('../assets/projectIcon.png')}
-        url="https://www.google.com"
+        linktype="internal"
         page="/projects"
       />
       <PageLink
         src={require('../assets/resumeIcon.png')}
-        url="https://www.google.com"
+        linktype="internal"
         page="/resume"
       />
     </section>

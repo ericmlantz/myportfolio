@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 //imported from this repo
 import Dock from './Dock'
 import PageLink from '../components/PageLink'
+import MyModal from '../components/MyModal'
 //create the component
 
 //variables
@@ -11,7 +12,6 @@ let appWidth = '60%'
 
 const Projects = () => {
   const navigate = useNavigate()
-
   //render
   return (
     <>
@@ -22,17 +22,17 @@ const Projects = () => {
       >
         <div className="projectapp">
           <PageLink
-            linktype="external"
-            page="https://deployment.d1ha25xg2gtgyh.amplifyapp.com/"
+            linktype="internal"
+            page="/project/dinr"
             src={require('../assets/dinrLogoIcon.png')}
             width={appWidth}
           />
         </div>
         <div className="projectapp">
           <PageLink
-            linktype="external"
-            page="https://www.google.com/search?q=set+card+game"
-            src={require('../assets/projectIcon.png')}
+            linktype="internal"
+            page="/project/set"
+            src={require('../assets/setLogoIcon.png')}
             width={appWidth}
           />
         </div>

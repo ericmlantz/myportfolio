@@ -1,14 +1,14 @@
 //imported from 3rd party libraries
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 //imported from this repo
 
 //create the component
 const PageLink = ({
-  linktype,
-  src,
-  internal,
   external,
+  internal,
+  linktype,
   page,
+  src,
   ...otherProps
 }) => {
   const navigate = useNavigate()
@@ -22,14 +22,15 @@ const PageLink = ({
     event.stopPropagation()
     window.open(`${page}`, '_blank')
   }
+
   //render
   return (
     <>
       {linktype === 'internal' && (
         <img
           linktype={internal}
-          page={page}
           onClick={handleClickPage}
+          page={page}
           style={{
             margin: '1px 5px',
             aspectRatio: 1 / 1,
@@ -42,8 +43,8 @@ const PageLink = ({
       {linktype === 'external' && (
         <img
           linktype={external}
-          page={page}
           onClick={(event) => handleClickUrl(event)}
+          page={page}
           style={{
             margin: '1px 5px',
             aspectRatio: 1 / 1,

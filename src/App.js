@@ -6,6 +6,8 @@ import './styles/App.css'
 import Home from './screens/Home'
 import Resume from './screens/Resume'
 import Projects from './screens/Projects'
+import DinrScreen from './screens/DinrScreen'
+import SetScreen from './screens/SetScreen'
 //create the component
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/project/dinr" element={<DinrScreen />} />
+        <Route path="/project/set" element={<SetScreen />} />
       </Routes>
     </div>
   )

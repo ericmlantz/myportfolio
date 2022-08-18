@@ -33,7 +33,7 @@ html, body {
 }
 .main {
   height: 80vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,11 +92,9 @@ html, body {
 }
 .windowmenubar {
   display: grid;
-  grid-template-columns: 0.15fr .7fr 0.15fr;
+  grid-template-columns: 0.15fr 1fr 0.15fr;
   grid-template-rows: 1fr;
   background-color: #EDEEEF;
-  width: 100%;
-  height: 10%;
   border-bottom: 1px #C9C9CB solid;
 }
 .windowdots {
@@ -146,7 +144,7 @@ html, body {
   color: #525252;
   font-weight: bold;
   text-align: center;
-  margin: auto auto;
+  margin: 2px auto;
  }
 
  .overviewwindow {
@@ -237,3 +235,26 @@ html, body {
   justify-content: center;
 }
 
+.projectapp img {
+  box-shadow: rgba(6, 24, 44, 0.65) 0px 2px 2px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  border-radius: 20%;
+}
+
+/* Project Info Component */
+.projectinfo {
+  text-align: left;
+  margin: 5px;
+  overflow: scroll;
+  font-size: 14px;
+}
+.techusedlist {
+  display: flex;
+  flex: 50%;
+  font-size: 14px;
+  height: 50%;
+}
+.projectinfosectiontitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom:0;
+}

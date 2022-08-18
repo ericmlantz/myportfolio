@@ -9,6 +9,7 @@ const Window = ({
   kind,
   extras,
   children,
+  onClick,
   tabname1,
   tabname2,
   tabname3,
@@ -19,7 +20,7 @@ const Window = ({
 }) => {
   //render
   return (
-    <div className="window" style={{ ...otherProps }}>
+    <div className="window" onClick={onClick} style={{ ...otherProps }}>
       <section className="windowmenubar">
         <section className="menuwidgets">
           <div className="windowdots red" style={{ marginLeft: '10px' }}></div>
@@ -38,9 +39,11 @@ const Window = ({
             <section className="windowbartitle">{windowtitle}</section>
           )}
         </>
-        <section className="extrawindowbaroptions">
-          {extras === 'icon' && <IconLink name={iconname} color={color} />}
-        </section>
+        {extras === 'icon' && (
+          <section className="extrawindowbaroptions">
+            <IconLink name={iconname} color={color} />
+          </section>
+        )}
       </section>
       <>{children}</>
     </div>

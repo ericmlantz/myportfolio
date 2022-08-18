@@ -1,10 +1,11 @@
 //imported from 3rd party libraries
-
+import { useLocation } from 'react-router-dom'
 //imported from this repo
 import PageLink from '../components/PageLink'
 
 //create the component
 const Dock = () => {
+  const projectLocation = useLocation()
   //render
   return (
     <section className="dockcontainer">
@@ -23,6 +24,12 @@ const Dock = () => {
         linktype="internal"
         page="/resume"
       />
+      {projectLocation.pathname === '/project/dinr' && (
+        <PageLink src={require('../assets/dinrLogoIcon.png')} />
+      )}
+      {projectLocation.pathname === '/project/set' && (
+        <PageLink src={require('../assets/setLogoIcon.png')} />
+      )}
     </section>
   )
 }

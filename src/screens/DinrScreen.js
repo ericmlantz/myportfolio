@@ -1,5 +1,5 @@
 //imported from 3rd party libraries
-import { useState } from 'react'
+
 //imported from this repo
 import Dock from './Dock'
 import MenuBar from './MenuBar'
@@ -8,12 +8,6 @@ import ProjectInfo from '../components/ProjectInfo'
 
 //create the component
 const DinrScreen = () => {
-  const [zIndexing, setZIndexing] = useState(0)
-
-  const handleClick = (event) => {
-    event.preventDefault()
-    if (event.target.title === 'Information') console.log('clicked')
-  }
   //render
   return (
     <>
@@ -29,11 +23,11 @@ const DinrScreen = () => {
           // position="relative"
           // bottom="-10px"
           // left="50px"
-          // zIndex={zIndexing}
-          // onClick={() => handleClick}
+          overflow="scroll"
         >
           <ProjectInfo
             appName="Dinr"
+            padding="5px"
             appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
             appTechUsed={[
               'JavaScript using React',
@@ -46,6 +40,8 @@ const DinrScreen = () => {
               'React-Tinder-Cards Library',
               'React-Cookies Library'
             ]}
+            appGithub="https://github.com/ericmlantz/frontend"
+            appDeployed="https://deployment.d1ha25xg2gtgyh.amplifyapp.com/"
           />
         </Window>
         <Window

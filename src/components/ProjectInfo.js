@@ -9,11 +9,12 @@ const ProjectInfo = ({
   appTechUsed = [],
   appGithub,
   appDeployed,
-  appTrello
+  appTrello,
+  ...otherProps
 }) => {
   //render
   return (
-    <div style={{ overflow: 'scroll' }}>
+    <div style={{ ...otherProps }}>
       <h3>{appName}</h3>
       {appDescription}
       <div className="projectinfo">
@@ -26,9 +27,15 @@ const ProjectInfo = ({
           </ul>
         </div>
         <p className="projectinfosectiontitle">Links</p>
-        The project's GitHub can be found <a href={appGithub}>HERE</a>
+        The project's GitHub can be found{' '}
+        <a href={appGithub} target="_blank">
+          here.
+        </a>
         <br />
-        The deployed app can be accessed <a href={appDeployed}>HERE</a>
+        The deployed app can be accessed{' '}
+        <a href={appDeployed} target="_blank">
+          here.
+        </a>
       </div>
     </div>
   )

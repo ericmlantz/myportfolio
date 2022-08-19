@@ -18,18 +18,19 @@ const SetScreen = () => {
           kind="title"
           windowtitle="Information"
           width="35%"
-          height="75%"
           marginLeft="10px"
-          overflow="scroll"
         >
-          <ProjectInfo
-            appName="SET Card Game"
-            appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
-            appTechUsed={['JavaScript', 'HTML', 'CSS', 'Surge Deployment']}
-            appGithub="https://github.com/ericmlantz/erics_set_game"
-            appDeployed="https://readyset.surge.sh/"
-            padding="5px"
-          />
+          <div style={{ height: '50vh', overflow: 'scroll' }}>
+            <ProjectInfo
+              overflow="scroll"
+              padding="5%"
+              appName="SET Card Game"
+              appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
+              appTechUsed={['JavaScript', 'HTML', 'CSS', 'Surge Deployment']}
+              appGithub="https://github.com/ericmlantz/erics_set_game"
+              appDeployed="https://readyset.surge.sh/"
+            />
+          </div>
         </Window>
         <Window
           id="Video"

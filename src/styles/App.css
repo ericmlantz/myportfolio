@@ -83,28 +83,29 @@ html, body {
 
 /* Home Main */
 .window {
-  width: 85vh;
-  height: 48vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 1fr;
   background-color: #EDEEEF;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  overflow: hidden;
   z-index: 0;
 }
-
 .window:hover {
   z-index:2;
 }
 .windowmenubar {
   display: grid;
   grid-template-columns: 0.15fr 1fr 0.15fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 30px;
   background-color: #EDEEEF;
   border-bottom: 1px #C9C9CB solid;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .windowdots {
-  width: 1.75vh;
-  height: 1.75vh;
+  width: 11px;
+  height: 11px;
   
   margin: 4px;
   border-radius: 50%;
@@ -120,6 +121,9 @@ html, body {
  .green {
   background-color: #61C554;
   border: 1px #59a64d solid;
+ }
+ .windowcontent {
+  width: 100%;
  }
 
  .tabcontainer {
@@ -153,32 +157,34 @@ html, body {
  }
 
  .overviewwindow {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: inherit;
-  height: 90%;
+  height: 100%;
+  padding: 5% 0px 5% 0px;
+  width: initial;
  }
 
  .section1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  height: 50%;
  }
  
  .section2 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-  height: inherit;
-  margin-top: 10%;
+  height: 100%;
   margin-right: 10%;
   text-align: left;
   overflow: scroll;
   font-weight: 300;
+  width: 50%;
+  font-size: 100%;
  }
 
  .borderbackground {
@@ -213,7 +219,7 @@ html, body {
   justify-content: flex-end;
   align-items: center;
   margin-right: 18px;
-  font-size: 150%;
+  font-size: 100%;
  }
 
 /* Projects Page */
@@ -249,12 +255,10 @@ html, body {
 .projectinfo {
   text-align: left;
   margin: 5px;
-  overflow: scroll;
   font-size: 14px;
 }
 .techusedlist {
   display: flex;
-  flex: 50%;
   font-size: 14px;
   height: 50%;
 }
@@ -264,6 +268,8 @@ html, body {
   margin-bottom:0;
 }
 
-.windowcontent {
-  overflow: scroll;
+.resumeiframecontainer {
+  height: 100vh;
 }
+
+

@@ -19,13 +19,16 @@ const Resume = () => {
           extras="icon"
           iconname="download"
           color="black"
+          overflow="hidden"
         >
-          <iframe
-            className="resumeiframe"
-            src="https://drive.google.com/file/d/1CVgqgu_lipfGMN7MLKaiIu800yRiO5G5/preview"
-            width="100%"
-            height="100%"
-          ></iframe>
+          <div className="resumeiframecontainer">
+            <iframe
+              className="resumeiframe"
+              src="https://drive.google.com/file/d/1CVgqgu_lipfGMN7MLKaiIu800yRiO5G5/preview"
+              width="100%"
+              height="100%"
+            ></iframe>
+          </div>
         </Window>
       </div>
       <div className="dock">

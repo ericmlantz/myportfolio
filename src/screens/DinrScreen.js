@@ -17,38 +17,38 @@ const DinrScreen = () => {
           id="Information"
           kind="title"
           windowtitle="Information"
-          width="35%"
-          height="75%"
+          width="70vh"
           marginLeft="10px"
           // position="relative"
           // bottom="-10px"
           // left="50px"
-          overflow="scroll"
         >
-          <ProjectInfo
-            appName="Dinr"
-            padding="5px"
-            appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
-            appTechUsed={[
-              'JavaScript using React',
-              'Node.js',
-              'Express',
-              'MongoDB',
-              'MongoClient',
-              'HTML',
-              'CSS',
-              'React-Tinder-Cards Library',
-              'React-Cookies Library'
-            ]}
-            appGithub="https://github.com/ericmlantz/frontend"
-            appDeployed="https://deployment.d1ha25xg2gtgyh.amplifyapp.com/"
-          />
+          <div style={{ height: '60vh', overflow: 'scroll' }}>
+            <ProjectInfo
+              appName="Dinr"
+              padding="5%"
+              appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
+              appTechUsed={[
+                'JavaScript using React',
+                'Node.js',
+                'Express',
+                'MongoDB',
+                'MongoClient',
+                'HTML',
+                'CSS',
+                'React-Tinder-Cards Library',
+                'React-Cookies Library'
+              ]}
+              appGithub="https://github.com/ericmlantz/frontend"
+              appDeployed="https://deployment.d1ha25xg2gtgyh.amplifyapp.com/"
+            />
+          </div>
         </Window>
         <Window
           id="Video"
           kind="title"
           windowtitle="Dinr Preview Video"
-          width="80%"
+          width="100vh"
           height="90%"
           margin="10px"
           // onClick={handleClick}

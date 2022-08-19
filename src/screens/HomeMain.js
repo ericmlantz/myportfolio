@@ -7,11 +7,18 @@ import OverviewTab from './OverviewTab'
 const HomeMain = () => {
   //render
   return (
-    <div>
-      <Window kind="title" windowtitle={'Hi, my name is...'}>
+    <>
+      <Window
+        kind="title"
+        width="75%"
+        minWidth="666px"
+        maxWidth="800px"
+        alignItems="center"
+        windowtitle={'Hi, my name is...'}
+      >
         <OverviewTab />
       </Window>
-    </div>
+    </>
   )
 }
 //make this component available to the app

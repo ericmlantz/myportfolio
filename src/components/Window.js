@@ -45,7 +45,7 @@ const Window = ({
           </section>
         )}
       </section>
-      <div className="windowcontent">{children}</div>
+      <section className="windowcontent">{children}</section>
     </div>
   )
 }

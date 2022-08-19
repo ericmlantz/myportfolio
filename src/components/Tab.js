@@ -1,15 +1,14 @@
 //imported from 3rd party libraries
-
+import { useState } from 'react'
 //imported from this repo
 
 //create the component
-const Tab = ({ tabname }) => {
+const Tab = ({ tabname, setOpenTab, openTab }) => {
+  console.log(openTab)
   //render
   return (
-    <a>
-      <div className="tab">
-        <span className="tabspan">{tabname}</span>
-      </div>
+    <a onClick={() => setOpenTab(tabname)}>
+      <div className="tab">{tabname}</div>
     </a>
   )
 }

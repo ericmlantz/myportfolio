@@ -17,7 +17,7 @@ const SetScreen = () => {
           id="Information"
           kind="title"
           windowtitle="Information"
-          width="35%"
+          width="70vh"
           marginLeft="10px"
         >
           <div style={{ height: '50vh', overflow: 'scroll' }}>
@@ -25,7 +25,7 @@ const SetScreen = () => {
               overflow="scroll"
               padding="5%"
               appName="SET Card Game"
-              appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
+              appDescription="The card game, SET, made using HTML, CSS, and Javascript. Designed in one week during a Software Engineering Immsersive Course from General Assembly."
               appTechUsed={['JavaScript', 'HTML', 'CSS', 'Surge Deployment']}
               appGithub="https://github.com/ericmlantz/erics_set_game"
               appDeployed="https://readyset.surge.sh/"
@@ -35,8 +35,8 @@ const SetScreen = () => {
         <Window
           id="Video"
           kind="title"
-          windowtitle="Dinr Preview Video"
-          width="80%"
+          windowtitle="Set Preview Video"
+          width="100vh"
           height="90%"
           margin="10px"
           // onClick={handleClick}

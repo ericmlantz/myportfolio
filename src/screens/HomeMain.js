@@ -3,20 +3,27 @@ import { useState } from 'react'
 //imported from this repo
 import Window from '../components/Window'
 import OverviewTab from './OverviewTab'
+import TechnicalSkillsTab from './TechnicalSkillsTab'
+
 //create the component
 const HomeMain = () => {
+  const [openTab, setOpenTab] = useState('Eric Lantz')
   //render
   return (
     <>
       <Window
-        kind="title"
+        kind="tab"
         width="75%"
         minWidth="666px"
         maxWidth="800px"
         alignItems="center"
-        windowtitle={'Hi, my name is...'}
+        tabname1={'Eric Lantz'}
+        tabname2={'Technical Skills'}
+        openTab={openTab}
+        setOpenTab={setOpenTab}
       >
-        <OverviewTab />
+        {openTab === 'Eric Lantz' && <OverviewTab />}
+        {openTab === 'Technical Skills' && <TechnicalSkillsTab />}
       </Window>
     </>
   )

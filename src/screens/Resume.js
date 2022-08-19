@@ -20,9 +20,11 @@ const Resume = () => {
           iconname="download"
           color="black"
           overflow="hidden"
+          url="https://drive.google.com/uc?id=1CVgqgu_lipfGMN7MLKaiIu800yRiO5G5&export=download"
         >
           <div className="resumeiframecontainer">
             <iframe
+              title="resumeiframe"
               className="resumeiframe"
               src="https://drive.google.com/file/d/1CVgqgu_lipfGMN7MLKaiIu800yRiO5G5/preview"
               width="100%"

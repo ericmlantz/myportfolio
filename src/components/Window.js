@@ -6,21 +6,24 @@ import Tab from './Tab'
 
 //create the component
 const Window = ({
-  kind,
-  extras,
   children,
-  onClick,
+  color,
+  extras,
+  iconname,
+  id,
+  kind,
+  openTab,
+  setOpenTab,
   tabname1,
   tabname2,
   tabname3,
+  url,
   windowtitle,
-  iconname,
-  color,
   ...otherProps
 }) => {
   //render
   return (
-    <div className="window" onClick={onClick} style={{ ...otherProps }}>
+    <div className="window" style={{ ...otherProps }}>
       <section className="windowmenubar">
         <section className="menuwidgets">
           <div className="windowdots red" style={{ marginLeft: '10px' }}></div>
@@ -30,9 +33,18 @@ const Window = ({
         <>
           {kind === 'tab' && (
             <section className="tabcontainer">
-              <Tab tabname={tabname1} />
-              <Tab tabname={tabname2} />
-              <Tab tabname={tabname3} />
+              <Tab
+                tabname={tabname1}
+                id="1"
+                openTab={openTab}
+                setOpenTab={setOpenTab}
+              />
+              <Tab
+                tabname={tabname2}
+                id="2"
+                openTab={openTab}
+                setOpenTab={setOpenTab}
+              />
             </section>
           )}
           {kind === 'title' && (
@@ -41,7 +53,7 @@ const Window = ({
         </>
         {extras === 'icon' && (
           <section className="extrawindowbaroptions">
-            <IconLink name={iconname} color={color} />
+            <IconLink name={iconname} color={color} url={url} />
           </section>
         )}
       </section>

@@ -49,16 +49,17 @@ const DinrScreen = () => {
           kind="title"
           windowtitle="Dinr Preview Video"
           width="100vh"
-          height="90%"
           margin="10px"
-          // onClick={handleClick}
+          onHover
         >
-          {/* <img
+          <img
+            // {onmousemove ? (src={require('../assets/DinrVideoBackground.png')}) :
+            // (src={require('../assets/dinrPreview.gif'})}
             src={require('../assets/dinrPreview.gif')}
             alt="loading"
             width="100%"
-            height="90%"
-          /> */}
+            height="100%"
+          />
         </Window>
       </div>
       <div className="dock">

@@ -129,13 +129,14 @@ html, body {
  .tabcontainer {
   border: 1px solid #D6D6D6;
   position:relative;
-  margin: auto auto;
+  margin: 4px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   overflow: hidden;
  }
+
  .tab {
   border-right: 1px solid #D6D6D6;
   width: fit-content;
@@ -169,7 +170,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: 50%;
  }
  
@@ -183,8 +184,7 @@ html, body {
   text-align: left;
   overflow: scroll;
   font-weight: 300;
-  width: 50%;
-  font-size: 100%;
+  width: 60%;
  }
 
  .borderbackground {

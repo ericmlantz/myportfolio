@@ -6,7 +6,7 @@
 const IconLink = ({ name, size, url, ...otherProps }) => {
   //render
   return (
-    <a href={url} alt={`${url}`} target="_blank" rel="noreferrer">
+    <a href={url} alt={`${url}`} target="_blank" rel="noreferrer" download>
       <i
         className={`bi bi-${name}`}
         style={{ fontSize: `${size}`, color: `white`, ...otherProps }}

@@ -1,6 +1,7 @@
 //imported from 3rd party libraries
-
+import { useState } from 'react'
 //imported from this repo
+import { Navigate } from 'react-router-dom'
 import PageLink from '../components/PageLink'
 //create the component
 const OverviewTab = () => {
@@ -32,10 +33,6 @@ const OverviewTab = () => {
             creative, engaging UI. I have a degree in psychology, so you get the
             best of both worlds with me!
           </div>
-        </section>
-        <section className="overviewlinks">
-          <div className="overviewbutton">Technical Skills</div>
-          <div className="overviewbutton">Hobbies</div>
         </section>
       </section>
     </section>

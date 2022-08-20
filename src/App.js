@@ -8,6 +8,8 @@ import Resume from './screens/Resume'
 import Projects from './screens/Projects'
 import DinrScreen from './screens/DinrScreen'
 import SetScreen from './screens/SetScreen'
+import OutAndAboutScreen from './screens/OutAndAboutScreen'
+
 //create the component
 export default function App() {
   return (
@@ -18,6 +20,7 @@ export default function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/project/dinr" element={<DinrScreen />} />
         <Route path="/project/set" element={<SetScreen />} />
+        <Route path="/project/outandabout" element={<OutAndAboutScreen />} />
       </Routes>
     </div>
   )

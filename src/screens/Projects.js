@@ -40,9 +40,11 @@ const Projects = () => {
         </div>
         <div className="projectapp">
           <PageLink
-            page="https://www.google.com/search?q=react+mobile+app"
-            src={require('../assets/projectIcon.png')}
+            linktype="internal"
+            page="/project/outandabout"
+            src={require('../assets/OutAndAboutIcon.png')}
             width={appWidth}
+            titletext={'Out and About 5'}
           />
         </div>
         {[...Array(9)].map((app, index) => (

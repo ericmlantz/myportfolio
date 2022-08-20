@@ -30,6 +30,9 @@ const Dock = () => {
       {projectLocation.pathname === '/project/set' && (
         <PageLink src={require('../assets/setLogoIcon.png')} />
       )}
+      {projectLocation.pathname === '/project/outandabout' && (
+        <PageLink src={require('../assets/OutAndAboutIcon.png')} />
+      )}
     </section>
   )
 }

@@ -306,7 +306,7 @@ html, body {
 
 /* PageLink Component*/
 .pagelink {
-  margin: 1px 5px;
+  margin: 1px 8px;
   aspect-ratio: 1 / 1;
   cursor: pointer;
 }

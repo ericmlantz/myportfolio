@@ -136,6 +136,9 @@ html, body {
   border-radius: 5px;
   overflow: hidden;
  }
+ .tabcontainer:hover {
+  background-color: #e8e8e8;
+ }
 
  .tab {
   border-right: 1px solid #D6D6D6;
@@ -147,7 +150,10 @@ html, body {
   padding: 0 5px;
   font-size: 12px;
   font-weight: bold;
-  color: #666768
+ }
+
+ .tab:target-within {
+  background-color: black;
  }
 
  .windowbartitle {
@@ -235,8 +241,10 @@ html, body {
 }
 .projectapp {
   width: 50%;
-  margin: auto;
   z-index: 1000;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 10%
 }
 .blur {
   width: 100%;
@@ -272,4 +280,54 @@ html, body {
   height: 100vh;
 }
 
+.skills-container {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 75%;
+}
 
+.skillscontent {
+  font-weight: 500;
+}
+
+.align-left {
+  text-align: left;
+  align-content: center;
+}
+
+.skills-container p {
+  margin: 5px;
+}
+
+.bi-download:hover {
+  color: rgb(71, 181, 44) !important;
+  font-size: 20px !important;
+}
+
+/* PageLink Component*/
+.pagelink {
+  margin: 1px 5px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.pagelinktitle {
+  color: white;
+}
+
+.techskills {
+  padding: 2% 2% 2% 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: baseline;
+}
+
+.skillitem {
+  margin-bottom: 10%;
+  padding: 5%;
+}
+.techskillsnames {
+  font-size: 14px;
+  font-weight: 300;
+}

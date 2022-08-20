@@ -20,7 +20,7 @@ const SetScreen = () => {
           width="70vh"
           marginLeft="10px"
         >
-          <div style={{ height: '50vh', overflow: 'scroll' }}>
+          <div style={{ height: '47vh', overflow: 'scroll' }}>
             <ProjectInfo
               overflow="scroll"
               padding="5%"
@@ -37,16 +37,15 @@ const SetScreen = () => {
           kind="title"
           windowtitle="Set Preview Video"
           width="100vh"
-          height="90%"
           margin="10px"
           // onClick={handleClick}
         >
-          {/* <img
-            src={require('../assets/dinrPreview.gif')}
+          <img
+            src={require('../assets/SetPreview.gif')}
             alt="loading"
             width="100%"
-            height="90%"
-          /> */}
+            height="100%"
+          />
         </Window>
       </div>
       <div className="dock">

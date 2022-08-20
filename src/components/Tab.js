@@ -1,13 +1,12 @@
 //imported from 3rd party libraries
-import { useState } from 'react'
+
 //imported from this repo
 
 //create the component
-const Tab = ({ tabname, setOpenTab, openTab }) => {
-  console.log(openTab)
+const Tab = ({ tabname, setOpenTab, ...otherProps }) => {
   //render
   return (
-    <a onClick={() => setOpenTab(tabname)}>
+    <a onClick={() => setOpenTab(tabname)} style={{ ...otherProps }}>
       <div className="tab">{tabname}</div>
     </a>
   )

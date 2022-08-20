@@ -34,16 +34,20 @@ const Window = ({
           {kind === 'tab' && (
             <section className="tabcontainer">
               <Tab
-                tabname={tabname1}
                 id="1"
                 openTab={openTab}
                 setOpenTab={setOpenTab}
+                tabname={tabname1}
+                backgroundColor={openTab === tabname1 ? '#dbdcde' : ''}
+                color={openTab === tabname1 ? '#454545' : '#666768'}
               />
               <Tab
-                tabname={tabname2}
                 id="2"
                 openTab={openTab}
                 setOpenTab={setOpenTab}
+                tabname={tabname2}
+                backgroundColor={openTab === tabname2 ? '#dbdcde' : ''}
+                color={openTab === tabname2 ? '#454545' : '#666768'}
               />
             </section>
           )}

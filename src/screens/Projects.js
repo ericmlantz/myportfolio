@@ -26,6 +26,7 @@ const Projects = () => {
             page="/project/dinr"
             src={require('../assets/dinrLogoIcon.png')}
             width={appWidth}
+            titletext={'Dinr'}
           />
         </div>
         <div className="projectapp">
@@ -34,6 +35,7 @@ const Projects = () => {
             page="/project/set"
             src={require('../assets/setLogoIcon.png')}
             width={appWidth}
+            titletext={'SET'}
           />
         </div>
         <div className="projectapp">

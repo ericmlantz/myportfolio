@@ -19,8 +19,9 @@ const HomeMain = () => {
         alignItems="center"
         tabname1={'Eric Lantz'}
         tabname2={'Technical Skills'}
-        openTab={openTab}
         setOpenTab={setOpenTab}
+        openTab={openTab}
+        backgroundColor
       >
         {openTab === 'Eric Lantz' && <OverviewTab />}
         {openTab === 'Technical Skills' && <TechnicalSkillsTab />}

@@ -11,7 +11,7 @@ const OverviewTab = () => {
       <section className="section1">
         <PageLink
           src={require('../assets/AboutMe.png')}
-          width="60%"
+          width="50%"
           borderRadius="50%"
           borderWidth="8px"
           borderColor="#ffffff"

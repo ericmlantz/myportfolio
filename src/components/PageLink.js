@@ -9,6 +9,8 @@ const PageLink = ({
   linktype,
   page,
   src,
+  titlecolor,
+  titletext,
   ...otherProps
 }) => {
   const navigate = useNavigate()
@@ -28,44 +30,38 @@ const PageLink = ({
     <>
       {linktype === 'internal' && (
         <img
+          alt={`link to ${page}`}
+          className="pagelink"
           linktype={internal}
           onClick={handleClickPage}
           page={page}
-          style={{
-            margin: '1px 5px',
-            aspectRatio: 1 / 1,
-            ...otherProps
-          }}
           src={src}
-          alt={`link to ${page}`}
+          style={{ ...otherProps }}
+          titletext={titletext}
         />
       )}
       {linktype === 'external' && (
         <img
+          alt={`link to ${page}`}
+          className="pagelink"
           linktype={external}
           onClick={(event) => handleClickUrl(event)}
           page={page}
-          style={{
-            margin: '1px 5px',
-            aspectRatio: 1 / 1,
-            ...otherProps
-          }}
           src={src}
-          alt={`link to ${page}`}
+          style={{ ...otherProps }}
+          titletext={titletext}
         />
       )}
       {!linktype && (
         <img
-          onClick={(event) => event.stopPropagation()}
-          style={{
-            margin: '1px 5px',
-            aspectRatio: 1 / 1,
-            ...otherProps
-          }}
-          src={src}
           alt={`link to ${page}`}
+          onClick={(event) => event.stopPropagation()}
+          src={src}
+          style={{ ...otherProps }}
+          titletext={titletext}
         />
       )}
+      {titletext && <p className="pagelinktitle">{titletext}</p>}
     </>
   )
 }

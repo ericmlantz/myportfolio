@@ -36,6 +36,11 @@ const Dock = () => {
         linktype="external"
         page="https://github.com/ericmlantz"
       />
+      <PageLink
+        src={require('../assets/emailIcon.png')}
+        linktype="external"
+        page="mailto:ericmlantz@gmail.com"
+      />
       {projectLocation.pathname === '/project/dinr' && (
         <PageLink src={require('../assets/dinrLogoIcon.png')} />
       )}

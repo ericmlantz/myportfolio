@@ -1,6 +1,6 @@
 # I'm Eric Lantz and this is my portfolio!
 
-I created it to look and act like a Mac desktop screen!
+I created my portfolio to _LOOK_ and _ACT_ like a Mac desktop screen!
 
 The home page has a dock which includes:
 
@@ -13,37 +13,18 @@ The home page has a dock which includes:
   - LinkedIn
   - GitHub
 
-Even with all those amazing features, the best part is definitely behind the scenes! The app uses 
+## **Even with all those amazing features, the best part is definitely behind the scenes!**
 
-## Full Stack Software Developer
+**The site is created from ONLY 5 self-contained components that are able to be used and customized in multiple ways.**
 
-- 🌍 I'm based in New York and Atlanta
-- 🖥️ Check out my [portfolio site](http://ericlantz.tech)
-- ✉️ You can contact me at [ericmlantz@gmail.com](mailto:ericmlantz@gmail.com)
-- 🚀 I'm finishing up on a swiping based restaurant matching app called [Dinr](http://deployment.d1ha25xg2gtgyh.amplifyapp.com/)
-- 🧠 I'm currently working my way through React Native
+- For example, my `Window` component has the ability to be altered by changing what you add in the components to be either a window with just a title or a window with tabs that can be switched between. You can also add a prop named 'extras' and set it equal to an icon name to create an icon to the right side of the window menu bar. This can be put with an `onClick` to allow for any action when you click the icon
 
-### Skills
+- I choose to use that for the download icon on my resume page which changes size and color on hover and downloads my resume on click!
 
-<p align="left">
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
-<a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
-<a href="https://vuejs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg" width="36" height="36" alt="Vue" /></a>
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
-<a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" /></a>
-<a href="https://redux.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" width="36" height="36" alt="Redux" /></a>
-<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
-<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
-<a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" /></a>
-<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>
-<a href="https://www.heroku.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg" width="36" height="36" alt="Heroku" /></a>
-<a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/django-colored.svg" width="36" height="36" alt="Django" /></a>
-<a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="36" height="36" alt="Photoshop" /></a>
-<a href="adobe.com/uk/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="36" height="36" alt="Illustrator" /></a>
-</p>
+**All the icons/images except for the 2 social links in the top right of the menu bar are made from JUST 1 COMPONENT!**
 
-### Socials
+- I created a prop that could be set for external, internal, or none to affect what the icon/image would do when interacted with so that it could be used for everything from the picture of me on the homepage TO the dock's icons TO the links on the technical skills logos.
 
-<p align="left"> <a href="https://www.github.com/ericmlantz" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/eric-lantz" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a></p>
+- If you have any questions or would like to learn more of how I did it, please don't hesitate to reach out!
+
+**You can find my Linkedin, my email, and my GitHub on my portfolio!**

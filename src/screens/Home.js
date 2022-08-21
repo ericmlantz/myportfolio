@@ -4,8 +4,6 @@
 import Dock from './Dock'
 import MenuBar from './MenuBar'
 import HomeMain from './HomeMain'
-import Window from '../components/Window'
-import OverviewTab from './OverviewTab'
 //create the component
 const Home = () => {
   //render

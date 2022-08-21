@@ -1,8 +1,7 @@
 //imported from 3rd party libraries
-import { useState } from 'react'
-import { Col, Row } from 'react-bootstrap'
+
 //imported from this repo
-import { Navigate } from 'react-router-dom'
+
 import PageLink from '../components/PageLink'
 //create the component
 const TechnicalSkillsTab = () => {

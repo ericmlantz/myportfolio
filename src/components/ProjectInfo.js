@@ -28,12 +28,12 @@ const ProjectInfo = ({
         </div>
         <p className="projectinfosectiontitle">Links</p>
         The project's GitHub can be found{' '}
-        <a href={appGithub} target="_blank">
+        <a href={appGithub} target="_blank" rel="noreferrer">
           here.
         </a>
         <br />
         The deployed app can be accessed{' '}
-        <a href={appDeployed} target="_blank">
+        <a href={appDeployed} target="_blank" rel="noreferrer">
           here.
         </a>
       </div>

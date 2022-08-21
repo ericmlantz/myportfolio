@@ -98,7 +98,7 @@ html, body {
   display: grid;
   grid-template-columns: 0.15fr 1fr 0.15fr;
   grid-template-rows: 30px;
-  background-color: #EDEEEF;
+  background-color: #f2f3f5;
   border-bottom: 1px #C9C9CB solid;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

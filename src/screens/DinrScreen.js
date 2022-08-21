@@ -16,18 +16,18 @@ const DinrScreen = () => {
         <Window
           id="Information"
           kind="title"
-          windowtitle="Information"
+          windowtitle="AppOverview"
           width="70vh"
           marginLeft="10px"
           // position="relative"
           // bottom="-10px"
           // left="50px"
         >
-          <div style={{ height: '60vh', overflow: 'scroll' }}>
+          <div style={{ height: '62vh', overflow: 'scroll' }}>
             <ProjectInfo
               appName="Dinr"
               padding="5%"
-              appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, application during the second unit in my Software Engineering Immersive by General Assembly."
+              appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, (MongoDB, Express, React, Node), application during the second unit in my Software Engineering Immersive by General Assembly."
               appTechUsed={[
                 'JavaScript using React',
                 'Node.js',
@@ -39,7 +39,7 @@ const DinrScreen = () => {
                 'React-Tinder-Cards Library',
                 'React-Cookies Library'
               ]}
-              appGithub="https://github.com/ericmlantz/frontend"
+              appGithub="https://github.com/ericmlantz/frontend#dinr---frontend"
               appDeployed="https://deployment.d1ha25xg2gtgyh.amplifyapp.com/"
             />
           </div>
@@ -50,16 +50,14 @@ const DinrScreen = () => {
           windowtitle="Dinr Preview Video"
           width="100vh"
           margin="10px"
-          onHover
+          overflow="hidden"
         >
-          <img
-            // {onmousemove ? (src={require('../assets/DinrVideoBackground.png')}) :
-            // (src={require('../assets/dinrPreview.gif'})}
-            src={require('../assets/dinrPreview.gif')}
-            alt="loading"
-            width="100%"
-            height="100%"
-          />
+          <video width="100%" height="100%" loop autoPlay muted>
+            <source
+              src={require('../assets/DinrPreview.mp4')}
+              type="video/mp4"
+            />
+          </video>
         </Window>
       </div>
       <div className="dock">

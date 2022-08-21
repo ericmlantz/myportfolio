@@ -24,6 +24,18 @@ const Dock = () => {
         linktype="internal"
         page="/resume"
       />
+      <PageLink
+        src={
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png'
+        }
+        linktype="external"
+        page="https://www.linkedin.com/in/eric-lantz/"
+      />
+      <PageLink
+        src={require('../assets/githubIcon.png')}
+        linktype="external"
+        page="https://github.com/ericmlantz"
+      />
       {projectLocation.pathname === '/project/dinr' && (
         <PageLink src={require('../assets/dinrLogoIcon.png')} />
       )}

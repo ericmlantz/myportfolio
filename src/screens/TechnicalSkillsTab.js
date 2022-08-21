@@ -173,7 +173,7 @@ const TechnicalSkillsTab = () => {
       <section className="skillitem">
         <PageLink
           linktype={'external'}
-          page="https://www.adobe.com/uk/products/photoshop.html"
+          page="https://www.adobe.com/us/products/photoshop.html"
           src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg"
           width="36px"
           height="36px"
@@ -183,7 +183,7 @@ const TechnicalSkillsTab = () => {
       <section className="skillitem">
         <PageLink
           linktype={'external'}
-          page="adobe.com/uk/products/illustrator.html"
+          page="https://www.adobe.com/us/products/illustrator.html"
           src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg"
           width="36px"
           height="36px"

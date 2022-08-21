@@ -16,7 +16,7 @@ const ProjectInfo = ({
   return (
     <div style={{ ...otherProps }}>
       <h3>{appName}</h3>
-      {appDescription}
+      <div className="techusedlist">{appDescription}</div>
       <div className="projectinfo">
         <p className="projectinfosectiontitle">Technologies Used</p>
         <div className="techusedlist">

@@ -16,7 +16,7 @@ const SetScreen = () => {
         <Window
           id="Information"
           kind="title"
-          windowtitle="Information"
+          windowtitle="App Overview"
           width="70vh"
           marginLeft="10px"
         >
@@ -27,7 +27,7 @@ const SetScreen = () => {
               appName="SET Card Game"
               appDescription="The card game, SET, made using HTML, CSS, and Javascript. Designed in one week during a Software Engineering Immsersive Course from General Assembly."
               appTechUsed={['JavaScript', 'HTML', 'CSS', 'Surge Deployment']}
-              appGithub="https://github.com/ericmlantz/erics_set_game"
+              appGithub="https://github.com/ericmlantz/erics_set_game#readyset"
               appDeployed="https://readyset.surge.sh/"
             />
           </div>
@@ -38,14 +38,14 @@ const SetScreen = () => {
           windowtitle="Set Preview Video"
           width="100vh"
           margin="10px"
-          // onClick={handleClick}
+          overflow="hidden"
         >
-          <img
-            src={require('../assets/SetPreview.gif')}
-            alt="loading"
-            width="100%"
-            height="100%"
-          />
+          <video width="100%" height="100%" loop autoPlay muted>
+            <source
+              src={require('../assets/SetPreview.mp4')}
+              type="video/mp4"
+            />
+          </video>
         </Window>
       </div>
       <div className="dock">

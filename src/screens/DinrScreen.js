@@ -42,6 +42,10 @@ const DinrScreen = () => {
               appGithub="https://github.com/ericmlantz/frontend#dinr---frontend"
               appDeployed="https://deployment.d1ha25xg2gtgyh.amplifyapp.com/"
             />
+            <div className="slownote">
+              **Registering/Logging In on deployed link is slow to load due to
+              hosting site. Please be patient!**
+            </div>
           </div>
         </Window>
         <Window

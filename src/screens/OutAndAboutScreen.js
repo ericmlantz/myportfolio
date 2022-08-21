@@ -43,7 +43,7 @@ const OutAndAboutScreen = () => {
               appGithub="https://github.com/LawrenceOL/out-n-about-5-front-end#out-n-about-5-front-end"
               appDeployed="https://out-n-about-5-front-end.herokuapp.com/"
             />
-            <div>
+            <div className="slownote">
               **Deployed link is slow to load due to hosting site. Please be
               patient!**
             </div>

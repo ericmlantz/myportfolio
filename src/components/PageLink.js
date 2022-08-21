@@ -55,7 +55,6 @@ const PageLink = ({
       {!linktype && (
         <img
           alt={`link to ${page}`}
-          className="pagelink"
           onClick={(event) => event.stopPropagation()}
           src={src}
           style={{ ...otherProps }}

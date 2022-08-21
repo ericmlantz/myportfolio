@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 //imported from this repo
 import Dock from './Dock'
 import PageLink from '../components/PageLink'
-import MyModal from '../components/MyModal'
 //create the component
 
 //variables

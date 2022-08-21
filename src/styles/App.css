@@ -4,7 +4,7 @@
   padding: 0;
 }
 html, body {
-  background: url(https://512pixels.net/downloads/macos-wallpapers/10-6-Server.jpg);
+  background: url('../assets/PortfolioBackground.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -328,6 +328,11 @@ html, body {
   padding: 5%;
 }
 .techskillsnames {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.slownote {
   font-size: 14px;
   font-weight: 300;
 }

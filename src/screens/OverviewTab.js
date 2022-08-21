@@ -1,8 +1,8 @@
 //imported from 3rd party libraries
-import { useState } from 'react'
+
 //imported from this repo
-import { Navigate } from 'react-router-dom'
 import PageLink from '../components/PageLink'
+
 //create the component
 const OverviewTab = () => {
   //render
@@ -11,6 +11,7 @@ const OverviewTab = () => {
       <section className="section1">
         <PageLink
           src={require('../assets/AboutMe.png')}
+          cursor="auto"
           width="50%"
           borderRadius="50%"
           borderWidth="8px"

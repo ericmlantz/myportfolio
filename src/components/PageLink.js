@@ -59,6 +59,7 @@ const PageLink = ({
           src={src}
           style={{ ...otherProps }}
           titletext={titletext}
+          className="pagelink"
         />
       )}
       {titletext && <p className="pagelinktitle">{titletext}</p>}

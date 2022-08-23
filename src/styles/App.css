@@ -76,7 +76,8 @@ html, body {
 .dockcontainer {
   display: flex;
   justify-content: center;
-  margin: 8px auto;
+  align-items: center;
+  margin: 2px auto;
   padding: 0px 20px;
   z-index: 0;
 }
@@ -240,12 +241,14 @@ html, body {
   z-index: 0;
 }
 .projectapp {
-  width: 50%;
+  width: 17vh;
+  height: 20vh;
   z-index: 1000;
   margin-left:auto;
   margin-right: auto;
   margin-top: 10%
 }
+
 .blur {
   width: 100%;
   height: 16vh;
@@ -310,9 +313,24 @@ html, body {
   aspect-ratio: 1 / 1;
   cursor: pointer;
 }
-
+img.pagelink {
+  height: 50%;
+  width: 10vh;
+}
 .pagelinktitle {
   color: white;
+  margin-bottom: 0;
+}
+.docksection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+}
+.docksection:hover {
+  transform: translateY(-5px);
 }
 
 .techskills {
@@ -335,4 +353,112 @@ html, body {
 .slownote {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* Welcome Screen */
+
+.welcomescreen {
+    opacity:    0.5; 
+    background: #000; 
+    width:      100%;
+    height:     100%; 
+    z-index:    2;
+    top:        0; 
+    left:       0; 
+    position:   fixed; 
+  }
+
+.presentdock {
+  position: fixed;
+  font-size: 4vh;
+  bottom: 17%;
+  z-index: 4;
+  color: white;
+  font-weight: 200;
+  margin: auto;
+  padding: .5% 1% .5% 1%;
+  line-height: .8;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.presentdock span {
+  font-size: 2vh;
+}
+
+.presentsocial {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  font-size: 1.75vh;
+  top: 5%;
+  right: .5%;
+  z-index: 4;
+  color: white;
+  font-weight: 200;
+  margin: auto;
+  padding: .5% .5% .5% .5%;
+  line-height: 1.2;
+  text-align: right;
+  border-radius: 10px;
+}
+
+.presentmenu {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: fixed;
+  font-size: 1.75vh;
+  top: 5%;
+  left: .5%;
+  z-index: 4;
+  color: white;
+  font-weight: 200;
+  padding: .7%;
+  line-height: 1.2;
+  text-align: left;
+  border-radius: 10px;
+  width:20vh;
+}
+
+.presentwelcome {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  font-size: 5vh;
+  top: 22%;
+  left: 25%;
+  z-index: 4;
+  color: white;
+  font-weight: 500;
+  margin: auto;
+  padding: .5% .5% .5% .5%;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 10px;
+  width: 50%;
+  min-width: 245px;
+}
+
+.button-43 {
+  background-image: linear-gradient(-180deg, #e1e1e1 0%,  #ffffff 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-43:hover {
+  background-image: linear-gradient(-180deg, #ffffff 0%, #e1e1e1 100%);
+}
+
+@media (min-width: 360px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
 }

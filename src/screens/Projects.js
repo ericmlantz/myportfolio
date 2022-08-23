@@ -6,7 +6,7 @@ import PageLink from '../components/PageLink'
 //create the component
 
 //variables
-let emptyApps = require('../assets/blankAppIcon.png')
+let emptyApps = require('../assets/glassPane.png')
 let appWidth = '60%'
 
 const Projects = () => {
@@ -48,7 +48,7 @@ const Projects = () => {
         </div>
         {[...Array(9)].map((app, index) => (
           <div className="projectapp" key={index}>
-            <PageLink src={emptyApps} width={appWidth} />
+            <PageLink cursor="auto" src={emptyApps} width={appWidth} />
           </div>
         ))}
       </div>

@@ -19,6 +19,8 @@ html, body {
   grid-template-columns: '10fr';
   grid-template-rows: '1fr 4fr 2fr';
   justify-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 /* Default Page Layout */
 .menubar {
@@ -33,7 +35,7 @@ html, body {
 }
 .main {
   height: 80vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +46,7 @@ html, body {
   width: fit-content;
 
   display: flex;
+  justify-content: center;
 
   background-color: rgba(190, 190, 190, 0.3 );
   border-radius: 1rem;

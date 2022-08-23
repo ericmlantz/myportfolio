@@ -46,7 +46,16 @@ const Projects = () => {
             titletext={'Out and About 5'}
           />
         </div>
-        {[...Array(9)].map((app, index) => (
+        <div className="projectapp">
+          <PageLink
+            src={require('../assets/portfolioIcon.png')}
+            linktype="external"
+            page="https://github.com/ericmlantz/myportfolio#im-eric-lantz-and-this-is-my-portfolio"
+            width={appWidth}
+            titletext={'My Portfolio'}
+          />
+        </div>
+        {[...Array(8)].map((app, index) => (
           <div className="projectapp" key={index}>
             <PageLink cursor="auto" src={emptyApps} width={appWidth} />
           </div>

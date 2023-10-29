@@ -8,8 +8,9 @@ import Projects from './screens/Projects'
 import DinrScreen from './screens/DinrScreen'
 import SetScreen from './screens/SetScreen'
 import OutAndAboutScreen from './screens/OutAndAboutScreen'
+import Testing from './screens/Testing'
 
-//create the component
+//display the component
 export default function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/project/dinr" element={<DinrScreen />} />
         <Route path="/project/set" element={<SetScreen />} />
         <Route path="/project/outandabout" element={<OutAndAboutScreen />} />
+        <Route path="/testing" element={<Testing />} />
       </Routes>
     </div>
   )

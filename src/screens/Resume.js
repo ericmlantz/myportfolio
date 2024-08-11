@@ -12,23 +12,23 @@ const Resume = () => {
       <MenuBar title="Resume" />
       <div className="main">
         <Window
-          width="85%"
-          height="95%"
+          width="75%"
+          height="100%"
           kind="title"
           windowtitle="Resume"
           extras="icon"
           iconname="download"
           color="black"
           overflow="hidden"
-          url="https://drive.google.com/uc?id=1k6uvf4ZZy0f3BMyZxGrHWu1HyenXVN9k&export=download"
+          url="https://drive.google.com/uc?id=1glBymFNdzt3UtpvALbBta6desj8vtFRs&export=download"
         >
           <div className="resumeiframecontainer">
             <iframe
               title="resumeiframe"
               className="resumeiframe"
-              src="https://drive.google.com/file/d/1k6uvf4ZZy0f3BMyZxGrHWu1HyenXVN9k/preview"
+              src="https://drive.google.com/file/d/1glBymFNdzt3UtpvALbBta6desj8vtFRs/preview"
               width="100%"
-              height="100%"
+              height="85%"
             ></iframe>
           </div>
         </Window>

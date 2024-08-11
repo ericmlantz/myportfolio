@@ -2,6 +2,7 @@
 
 //imported from this repo
 import PageLink from '../components/PageLink'
+import '../assets/About_Me3.png'
 
 //create the component
 const OverviewTab = () => {
@@ -10,7 +11,7 @@ const OverviewTab = () => {
     <section className="overviewwindow">
       <section className="section1">
         <PageLink
-          src={require('../assets/AboutMe.png')}
+          src={require('../assets/About_Me3.png')}
           cursor="auto"
           width="50%"
           borderRadius="50%"

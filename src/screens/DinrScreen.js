@@ -58,7 +58,7 @@ const DinrScreen = () => {
         >
           <video width="100%" height="100%" loop autoPlay muted>
             <source
-              src={require('../assets/DinrPreview.mp4')}
+              src={require('../assets/videos/DinrPreview.mp4')}
               type="video/mp4"
             />
           </video>

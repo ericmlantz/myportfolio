@@ -28,7 +28,7 @@ const Resume = () => {
               className="resumeiframe"
               src="https://drive.google.com/file/d/1glBymFNdzt3UtpvALbBta6desj8vtFRs/preview"
               width="100%"
-              height="85%"
+              height="75%"
             ></iframe>
           </div>
         </Window>

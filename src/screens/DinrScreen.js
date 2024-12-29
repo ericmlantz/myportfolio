@@ -19,9 +19,6 @@ const DinrScreen = () => {
           windowtitle="AppOverview"
           width="70vh"
           marginLeft="10px"
-          // position="relative"
-          // bottom="-10px"
-          // left="50px"
         >
           <div style={{ height: '62vh', overflow: 'scroll' }}>
             <ProjectInfo

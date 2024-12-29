@@ -31,11 +31,15 @@ const ProjectInfo = ({
         <a href={appGithub} target="_blank" rel="noreferrer">
           here.
         </a>
-        {/* <br />
-        The deployed app can be accessed{' '}
-        <a href={appDeployed} target="_blank" rel="noreferrer">
-          here.
-        </a> */}
+        <br />
+        {appDeployed && (
+          <p>
+            The deployed app can be accessed{' '}
+            <a href={appDeployed} target="_blank" rel="noreferrer">
+              here.
+            </a>
+          </p>
+        )}
       </div>
     </div>
   )

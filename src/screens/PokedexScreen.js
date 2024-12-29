@@ -7,11 +7,11 @@ import Window from '../components/Window'
 import ProjectInfo from '../components/ProjectInfo'
 
 //create the component
-const DinrScreen = () => {
+const PokedexScreen = () => {
   //render
   return (
     <>
-      <MenuBar title="Dinr" />
+      <MenuBar title="Pokédex" />
       <div className="main">
         <Window
           id="Information"
@@ -22,40 +22,35 @@ const DinrScreen = () => {
         >
           <div style={{ height: '62vh', overflow: 'scroll' }}>
             <ProjectInfo
-              appName="Dinr"
+              appName="Pokédex"
               padding="5%"
-              appDescription="A matching, swipe style application for restaurant-goers, developed as a full-stack, M.E.R.N, (MongoDB, Express, React, Node), application during the second unit in my Software Engineering Immersive by General Assembly."
+              appDescription="The Pokedex application is an interactive platform for exploring and managing Pokémon information. Users can search by type, view detailed profiles with stats, moves, and types, and even add new Pokémon to the database with real-time dropdown menus and optional image uploads to an AWS S3 bucket. With a sleek design, intuitive navigation, and features like type-filtered search and move-specific pop-ups, the app offers a rich and immersive user experience. Backed by a robust RESTful API, it ensures seamless data creation, retrieval, and updates."
               appTechUsed={[
                 'JavaScript using React',
                 'Node.js',
                 'Express',
-                'MongoDB',
-                'MongoClient',
+                'Amazon RDS',
+                'Amazon EC2',
+                'Amazon S3',
                 'HTML',
                 'CSS',
-                'React-Tinder-Cards Library',
-                'React-Cookies Library'
               ]}
-              appGithub="https://github.com/ericmlantz/frontend#dinr---frontend"
-              appDeployed="https://dinr.ericlan.tz"
+              appGithub="https://github.com/ericmlantz/pokedex"
+              appDeployed="https://pokedex.ericlan.tz"
             />
-            {/* <div className="slownote">
-              **Registering/Logging In on deployed link is slow to load due to
-              hosting site. Please be patient!**
-            </div>  */}
           </div>
         </Window>
         <Window
           id="Video"
           kind="title"
-          windowtitle="Dinr Preview Video"
+          windowtitle="Pokédex Preview Video"
           width="100vh"
           margin="10px"
           overflow="hidden"
         >
           <video width="100%" height="100%" loop autoPlay muted>
             <source
-              src={require('../assets/videos/DinrPreview-Optimized.mp4')}
+              src={require('../assets/videos/Pokedex_Demo_Video.mp4')}
               type="video/mp4"
             />
           </video>
@@ -68,4 +63,4 @@ const DinrScreen = () => {
   )
 }
 //make this component available to the app
-export default DinrScreen
+export default PokedexScreen

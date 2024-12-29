@@ -70,6 +70,16 @@ const Dock = () => {
           titletext={'Email'}
         />
       </div>
+      {projectLocation.pathname === '/project/pokedex' && (
+        <div className="docksection">
+          <PageLink
+            width={dockitemwidth}
+            height="100%"
+            src={require('../assets/Pokedex_icon.png')}
+            titletext={'Pokédex'}
+          />
+        </div>
+      )}
       {projectLocation.pathname === '/project/dinr' && (
         <div className="docksection">
           <PageLink

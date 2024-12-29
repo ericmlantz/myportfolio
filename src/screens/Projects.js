@@ -55,7 +55,16 @@ const Projects = () => {
             titletext={'My Portfolio'}
           />
         </div>
-        {[...Array(8)].map((app, index) => (
+        <div className="projectapp">
+          <PageLink
+            src={require('../assets/Pokedex_icon.png')}
+            linktype="internal"
+            page="/project/pokedex"
+            width={appWidth}
+            titletext={'Pokédex'}
+          />
+        </div>
+        {[...Array(7)].map((app, index) => (
           <div className="projectapp" key={index}>
             <PageLink cursor="auto" src={emptyApps} width={appWidth} />
           </div>

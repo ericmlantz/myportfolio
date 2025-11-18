@@ -1,8 +1,8 @@
 //imported from 3rd party libraries
 
 //imported from this repo
-
 import PageLink from '../components/PageLink'
+
 //create the component
 const TechnicalSkillsTab = () => {
   //render

@@ -357,3 +357,24 @@ img.pagelink {
   font-size: 14px;
   font-weight: 300;
 }
+
+/* Terminal Page */
+.react-terminal-wrapper {
+  margin-top: 5%;
+  height: 80% !important;
+  border-radius: 10px !important;
+}
+
+.terminal_container {
+  text-align: left;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.react-terminal {
+  height: 100% !important;
+}
+
+.react-terminal-line {
+  white-space: normal !important;
+}

@@ -19,10 +19,10 @@ const TerminalPage = () => {
 
   const commands = [
     {
-      // college-info: requires "college" or "university" BUT not "year"
+      // college-info: requires "college" or "university" or "school" BUT not "year"
       match: (lower) =>
-        (lower.includes('college') || lower.includes('university')) &&
-        !lower.includes('year'),
+      ((lower.includes('college') || lower.includes('university')) || lower.includes('school')) &&
+        (!lower.includes('year') && !lower.includes('graduate')),
       action: (ld) => {
         ld.push(
           <TerminalOutput>
@@ -34,10 +34,10 @@ const TerminalPage = () => {
     },
 
     {
-      // college-year-detailed: requires "year" AND (college OR university)
+      // college-year-detailed: requires "year" or "graduate" AND (college OR university OR school)
       match: (lower) =>
-        lower.includes('year') &&
-        (lower.includes('college') || lower.includes('university')),
+        (lower.includes('year') || lower.includes('graduate')) &&
+        (lower.includes('college') || lower.includes('university') || lower.includes('school') || lower.includes('graduate')),
       action: (ld) => {
         ld.push(
           <TerminalOutput>

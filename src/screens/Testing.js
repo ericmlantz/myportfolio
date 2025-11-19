@@ -2,9 +2,8 @@
 import { useState } from 'react'
 
 //imported from this repo
-import Testing_Tab1 from './Testing_Tab1'
+import TestingTab1 from './Testing_Tab1'
 import Window from '../components/Window'
-import OverviewTab from './OverviewTab'
 import TechnicalSkillsTab from './TechnicalSkillsTab'
 
 //create the component
@@ -25,7 +24,7 @@ const Testing = () => {
         openTab={openTab}
         backgroundColor
       >
-        {openTab === 'Tab 1' && <Testing_Tab1 />}
+        {openTab === 'Tab 1' && <TestingTab1 />}
         {openTab === 'Tab 2' && <TechnicalSkillsTab />}
       </Window>
     </>

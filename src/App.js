@@ -9,7 +9,8 @@ import DinrScreen from './screens/DinrScreen'
 import SetScreen from './screens/SetScreen'
 import OutAndAboutScreen from './screens/OutAndAboutScreen'
 import PokedexScreen from './screens/PokedexScreen'
-import Testing from './screens/Testing'
+// import Testing from './screens/Testing'
+import TerminalPage from './screens/TerminalPage'
 
 //display the component
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
         <Route path="/project/set" element={<SetScreen />} />
         <Route path="/project/outandabout" element={<OutAndAboutScreen />} />
         <Route path="/project/pokedex" element={<PokedexScreen />} />
-        <Route path="/testing" element={<Testing />} />
+        {/* <Route path="/testing" element={<Testing />} /> */}
+        <Route path="terminal" element={<TerminalPage /> } />
       </Routes>
     </div>
   )
